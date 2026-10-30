@@ -225,6 +225,9 @@ main { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
 .terminal .prompt { color: #7ee787; }
 .terminal .pw { color: #ffffff; font-weight: 500; }
 .terminal .ok { color: #79c0ff; }
+.terminal .warn { color: #e3b341; }
+.terminal .bad { color: #ff7b72; }
+.terminal .dim { color: #8b949e; }
 
 .project-body { padding: 20px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
 .project-body h3 { font-size: 1.15rem; display: flex; align-items: center; gap: 8px; }
