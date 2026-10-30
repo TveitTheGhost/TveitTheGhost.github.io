@@ -1,5 +1,39 @@
 [
   {
+    "name": "Uptime Monitor",
+    "emoji": "📡",
+    "categories": ["cli"],
+    "image": "images/uptime-monitor.jpg",
+    "description": "Checks a list of websites, tracks response times and outages, and builds a status page like the big services have.",
+    "highlights": ["Live terminal view with sparklines", "Self-contained HTML status report, 44 tests"],
+    "tags": ["Node.js", "CLI", "Monitoring", "Testing"],
+    "builtWith": "Node.js · zero deps",
+    "tests": 44,
+    "repo": "https://github.com/TveitTheGhost/uptime-monitor",
+    "live": null,
+    "private": true
+  },
+  {
+    "name": "syshealth",
+    "emoji": "🩺",
+    "categories": ["cli"],
+    "terminal": [
+      ["prompt", "$ syshealth"],
+      ["ok", "System Health  ✓ healthy"],
+      ["dim", "CPU     ██████░░░░░░░░  29%"],
+      ["dim", "Memory  ████████░░░░░░  41%"],
+      ["warn", "Disk C: ████████████░░  86%"]
+    ],
+    "description": "A terminal dashboard for CPU, memory, disks, network and top processes, with warnings when something runs hot.",
+    "highlights": ["Live watch mode, JSON output for scripts", "Privacy switch masks IPs and MACs, 31 tests"],
+    "tags": ["Node.js", "CLI", "SysAdmin", "Testing"],
+    "builtWith": "Node.js · zero deps",
+    "tests": 31,
+    "repo": "https://github.com/TveitTheGhost/system-health-cli",
+    "live": null,
+    "private": true
+  },
+  {
     "name": "Phishing Link Analyzer",
     "emoji": "🎣",
     "categories": ["security", "app"],
