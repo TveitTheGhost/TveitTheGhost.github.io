@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TveitTheGhost · Developer</title>
+  <meta name="description" content="Portfolio of TveitTheGhost: works in tech, building web apps, games and command-line tools.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👻</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // Apply the saved theme before the page paints, so there is no flash.
+    try {
+      const saved = localStorage.getItem('portfolio-theme');
+      if (saved) document.documentElement.dataset.theme = saved;
+    } catch {}
+  </script>
+</head>
+<body>
+  <header class="nav">
+    <a href="#top" class="logo" aria-label="Back to top"><span class="ghost">👻</span> TveitTheGhost</a>
+    <nav aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">◐</button>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <p class="eyebrow mono">// hello, world</p>
+      <h1>Hi, I'm <span class="gradient">TveitTheGhost</span>.<br>I build things for the web.</h1>
+      <p class="lead">
+        I work in tech and I'm growing into software development, one shipped project at a time.
+        I build clean, responsive web apps, small games and command-line tools, and I use AI
+        tools like Claude Code to move fast and learn faster.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn primary">See my work ↓</a>
+        <a href="https://github.com/TveitTheGhost" class="btn" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
+      <dl class="stats">
+        <div><dt id="stat-projects">5</dt><dd>projects shipped</dd></div>
+        <div><dt>0</dt><dd>frameworks needed</dd></div>
+        <div><dt>19</dt><dd>automated tests</dd></div>
+      </dl>
+    </section>
+
+    <section id="about" class="section about">
+      <h2>About</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            My day-to-day is already in tech, so I know what it's like to keep systems running and
+            help people when things break. Now I'm moving closer to the code: building the tools,
+            not just supporting them.
+          </p>
+          <p>
+            I learn by building. Every project here started as an idea and went all the way through
+            design, code, testing and documentation. Along the way I've picked up things like
+            minimax game AI, working with REST APIs, accurate timers, and secure randomness.
+          </p>
+        </div>
+        <div class="now card">
+          <h3 class="mono">currently_exploring = [</h3>
+          <ul>
+            <li><span>🌐</span> Web development</li>
+            <li><span>🤖</span> AI &amp; automation</li>
+            <li><span>🎮</span> Game development</li>
+            <li><span>🔐</span> Cybersecurity</li>
+          </ul>
+          <h3 class="mono">]</h3>
+          <p class="muted">📍 Based on Earth 🌍</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-head">
+        <h2>Projects</h2>
+        <div class="filters" role="group" aria-label="Filter projects">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="app">Web apps</button>
+          <button class="filter" data-filter="game">Games</button>
+          <button class="filter" data-filter="cli">CLI</button>
+        </div>
+      </div>
+      <div id="project-grid" class="grid"></div>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div class="skill-group card">
+          <h3>Languages</h3>
+          <ul><li>JavaScript</li><li>HTML5</li><li>CSS3</li></ul>
+        </div>
+        <div class="skill-group card">
+          <h3>Platforms &amp; APIs</h3>
+          <ul><li>Node.js</li><li>REST APIs / fetch</li><li>Web Audio API</li><li>SVG</li><li>localStorage</li></ul>
+        </div>
+        <div class="skill-group card">
+          <h3>Practices</h3>
+          <ul><li>Responsive design</li><li>Accessibility</li><li>Automated testing</li><li>Theming</li><li>Documentation</li></ul>
+        </div>
+        <div class="skill-group card">
+          <h3>Tools</h3>
+          <ul><li>Git &amp; GitHub</li><li>GitHub CLI</li><li>npm</li><li>Claude Code</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <h2>Let's build something</h2>
+      <p class="lead">Always up for a new project, a code review, or talking shop. The best place to find me is GitHub.</p>
+      <a href="https://github.com/TveitTheGhost" class="btn primary" target="_blank" rel="noopener">github.com/TveitTheGhost ↗</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> TveitTheGhost · Hand-built with HTML, CSS &amp; JavaScript</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
