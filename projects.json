@@ -1,253 +1,584 @@
 [
   {
+    "name": "JWT Inspector",
+    "emoji": "🔑",
+    "categories": [
+      "security",
+      "app"
+    ],
+    "description": "Decode, audit and verify JSON Web Tokens locally: catches alg:none, guessable secrets, header injection and leaked sensitive data.",
+    "highlights": [
+      "Verifies HS, RS, PS, ES and EdDSA signatures with Web Crypto",
+      "Severity-ranked audit with a fix for every finding"
+    ],
+    "tags": [
+      "JavaScript",
+      "Web Crypto",
+      "JWT",
+      "Security"
+    ],
+    "builtWith": "JavaScript · Web Crypto",
+    "repo": "https://github.com/TveitTheGhost/jwt-inspector",
+    "live": null,
+    "private": true,
+    "updated": "2026-11-19",
+    "added": "2026-11-19",
+    "tests": 13,
+    "image": "images/jwt-inspector.jpg"
+  },
+  {
+    "name": "Log Threat Hunter",
+    "emoji": "🕵️",
+    "categories": [
+      "security",
+      "app"
+    ],
+    "description": "Finds brute force, password spraying, scanners, SQL injection and Log4Shell in SSH and web server logs, right in the browser.",
+    "highlights": [
+      "Sliding-window detection with an attack timeline",
+      "Ready-made ufw, iptables and nginx block rules"
+    ],
+    "tags": [
+      "JavaScript",
+      "Threat Hunting",
+      "SSH",
+      "Security"
+    ],
+    "builtWith": "JavaScript · SVG",
+    "repo": "https://github.com/TveitTheGhost/log-threat-hunter",
+    "live": null,
+    "private": true,
+    "updated": "2026-11-19",
+    "added": "2026-11-19",
+    "tests": 15,
+    "image": "images/log-threat-hunter.jpg"
+  },
+  {
+    "name": "Security Headers Grader",
+    "emoji": "🛡️",
+    "categories": [
+      "security",
+      "app"
+    ],
+    "description": "Grades a site's HTTP security headers from A+ to F and writes copy-paste fixes for nginx, Apache, Express and Netlify.",
+    "highlights": [
+      "Real CSP analysis, cookie and CORS audits",
+      "Shell-safe curl helper, redirect-aware grading"
+    ],
+    "tags": [
+      "JavaScript",
+      "OWASP",
+      "CSP",
+      "Security"
+    ],
+    "builtWith": "JavaScript · OWASP guidance",
+    "repo": "https://github.com/TveitTheGhost/security-headers-grader",
+    "live": null,
+    "private": true,
+    "updated": "2026-11-19",
+    "added": "2026-11-19",
+    "tests": 18,
+    "image": "images/security-headers-grader.jpg"
+  },
+  {
     "name": "Claude Assistant",
     "emoji": "✦",
-    "categories": ["ai", "app"],
+    "categories": [
+      "ai",
+      "app"
+    ],
     "image": "images/claude-assistant.jpg",
     "description": "My own AI chat assistant on the Claude API, with streaming replies and a local server that keeps the API key off the browser.",
-    "highlights": ["Streaming responses with stop, Markdown and code blocks", "Locked-down server: validation, CSP, no key exposure, 17 tests"],
-    "tags": ["Node.js", "Claude API", "AI", "Security"],
+    "highlights": [
+      "Streaming responses with stop, Markdown and code blocks",
+      "Locked-down server: validation, CSP, no key exposure, 17 tests"
+    ],
+    "tags": [
+      "Node.js",
+      "Claude API",
+      "AI",
+      "Security"
+    ],
     "builtWith": "Node.js · Claude API",
     "tests": 17,
     "repo": "https://github.com/TveitTheGhost/claude-assistant",
     "live": null,
-    "private": true
+    "private": true,
+    "updated": "2026-10-31",
+    "added": "2026-10-31"
   },
   {
     "name": "Space Shooter",
     "emoji": "🚀",
-    "categories": ["game"],
+    "categories": [
+      "game"
+    ],
     "image": "images/space-shooter.jpg",
     "description": "A neon canvas arcade shooter with enemy waves, power-ups, combos and a boss fight every five waves.",
-    "highlights": ["Fixed-timestep game loop, particles and screen shake", "Synthesized sound effects, touch controls"],
-    "tags": ["JavaScript", "Canvas", "Game", "Web Audio"],
+    "highlights": [
+      "Fixed-timestep game loop, particles and screen shake",
+      "Synthesized sound effects, touch controls"
+    ],
+    "tags": [
+      "JavaScript",
+      "Canvas",
+      "Game",
+      "Web Audio"
+    ],
     "builtWith": "JavaScript · Canvas · Web Audio",
     "tests": 10,
     "repo": "https://github.com/TveitTheGhost/space-shooter",
     "live": null,
-    "private": true
+    "private": true,
+    "updated": "2026-10-31",
+    "added": "2026-10-31"
   },
   {
     "name": "Markdown Notes",
     "emoji": "📝",
-    "categories": ["app", "security"],
+    "categories": [
+      "app",
+      "security"
+    ],
     "image": "images/markdown-notes.jpg",
     "description": "A notes app with live Markdown preview, tags, search and pinned notes, stored in the browser's IndexedDB.",
-    "highlights": ["Every preview sanitized with DOMPurify against XSS", "Tags, full-text search, import and export"],
-    "tags": ["JavaScript", "IndexedDB", "Security"],
+    "highlights": [
+      "Every preview sanitized with DOMPurify against XSS",
+      "Tags, full-text search, import and export"
+    ],
+    "tags": [
+      "JavaScript",
+      "IndexedDB",
+      "Security"
+    ],
     "builtWith": "JavaScript · IndexedDB · DOMPurify",
     "tests": 11,
     "repo": "https://github.com/TveitTheGhost/markdown-notes",
     "live": null,
-    "private": true
+    "private": true,
+    "updated": "2026-10-31",
+    "added": "2026-10-31"
   },
   {
     "name": "Kanban Board",
     "emoji": "📋",
-    "categories": ["app"],
+    "categories": [
+      "app"
+    ],
     "image": "images/kanban-board.jpg",
     "description": "A Trello-style board with drag-and-drop cards, labels, due dates, checklists and multiple boards.",
-    "highlights": ["Drag and drop with mouse, touch and keyboard", "JSON import with strict validation, undo"],
-    "tags": ["JavaScript", "Drag and drop", "Accessibility"],
+    "highlights": [
+      "Drag and drop with mouse, touch and keyboard",
+      "JSON import with strict validation, undo"
+    ],
+    "tags": [
+      "JavaScript",
+      "Drag and drop",
+      "Accessibility"
+    ],
     "builtWith": "JavaScript · Pointer Events",
     "tests": 13,
     "repo": "https://github.com/TveitTheGhost/kanban-board",
     "live": null,
-    "private": true
+    "private": true,
+    "updated": "2026-10-31",
+    "added": "2026-10-31"
   },
   {
     "name": "Typing Speed Test",
     "emoji": "⌨️",
-    "categories": ["app", "game"],
+    "categories": [
+      "app",
+      "game"
+    ],
     "image": "images/typing-speed-test.jpg",
     "description": "Measure your words per minute and accuracy on common words or real code, with a live chart of every test.",
-    "highlights": ["Live character highlighting and WPM chart", "Code-typing mode, personal bests and history"],
-    "tags": ["JavaScript", "SVG", "Testing"],
+    "highlights": [
+      "Live character highlighting and WPM chart",
+      "Code-typing mode, personal bests and history"
+    ],
+    "tags": [
+      "JavaScript",
+      "SVG",
+      "Testing"
+    ],
     "builtWith": "JavaScript · SVG",
     "tests": 11,
     "repo": "https://github.com/TveitTheGhost/typing-speed-test",
     "live": null,
-    "private": true
+    "private": true,
+    "updated": "2026-10-31",
+    "added": "2026-10-31"
   },
   {
     "name": "Budget Tracker",
     "emoji": "💰",
-    "categories": ["app"],
+    "categories": [
+      "app"
+    ],
     "image": "images/budget-tracker.jpg",
     "description": "Track income and expenses with category budgets, hand-built charts and spreadsheet-safe CSV export.",
-    "highlights": ["Colorblind-safe SVG charts with tooltips", "Exact cent math, CSV formula-injection protection"],
-    "tags": ["JavaScript", "SVG", "Data viz", "Testing"],
+    "highlights": [
+      "Colorblind-safe SVG charts with tooltips",
+      "Exact cent math, CSV formula-injection protection"
+    ],
+    "tags": [
+      "JavaScript",
+      "SVG",
+      "Data viz",
+      "Testing"
+    ],
     "builtWith": "JavaScript · SVG",
     "tests": 10,
     "repo": "https://github.com/TveitTheGhost/budget-tracker",
     "live": null,
-    "private": true
+    "private": true,
+    "updated": "2026-10-31",
+    "added": "2026-10-31"
   },
   {
     "name": "Uptime Monitor",
     "emoji": "📡",
-    "categories": ["cli"],
+    "categories": [
+      "cli"
+    ],
     "image": "images/uptime-monitor.jpg",
     "description": "Checks a list of websites, tracks response times and outages, and builds a status page like the big services have.",
-    "highlights": ["Live terminal view with sparklines", "Self-contained HTML status report, 44 tests"],
-    "tags": ["Node.js", "CLI", "Monitoring", "Testing"],
+    "highlights": [
+      "Live terminal view with sparklines",
+      "Self-contained HTML status report, 44 tests"
+    ],
+    "tags": [
+      "Node.js",
+      "CLI",
+      "Monitoring",
+      "Testing"
+    ],
     "builtWith": "Node.js · zero deps",
     "tests": 44,
     "repo": "https://github.com/TveitTheGhost/uptime-monitor",
     "live": null,
-    "private": true
+    "private": true,
+    "updated": "2026-10-30",
+    "added": "2026-10-30"
   },
   {
     "name": "syshealth",
     "emoji": "🩺",
-    "categories": ["cli"],
+    "categories": [
+      "cli"
+    ],
     "terminal": [
-      ["prompt", "$ syshealth"],
-      ["ok", "System Health  ✓ healthy"],
-      ["dim", "CPU     ██████░░░░░░░░  29%"],
-      ["dim", "Memory  ████████░░░░░░  41%"],
-      ["warn", "Disk C: ████████████░░  86%"]
+      [
+        "prompt",
+        "$ syshealth"
+      ],
+      [
+        "ok",
+        "System Health  ✓ healthy"
+      ],
+      [
+        "dim",
+        "CPU     ██████░░░░░░░░  29%"
+      ],
+      [
+        "dim",
+        "Memory  ████████░░░░░░  41%"
+      ],
+      [
+        "warn",
+        "Disk C: ████████████░░  86%"
+      ]
     ],
     "description": "A terminal dashboard for CPU, memory, disks, network and top processes, with warnings when something runs hot.",
-    "highlights": ["Live watch mode, JSON output for scripts", "Privacy switch masks IPs and MACs, 31 tests"],
-    "tags": ["Node.js", "CLI", "SysAdmin", "Testing"],
+    "highlights": [
+      "Live watch mode, JSON output for scripts",
+      "Privacy switch masks IPs and MACs, 31 tests"
+    ],
+    "tags": [
+      "Node.js",
+      "CLI",
+      "SysAdmin",
+      "Testing"
+    ],
     "builtWith": "Node.js · zero deps",
     "tests": 31,
     "repo": "https://github.com/TveitTheGhost/system-health-cli",
     "live": null,
-    "private": true
+    "private": true,
+    "updated": "2026-10-30",
+    "added": "2026-10-30"
   },
   {
     "name": "Phishing Link Analyzer",
     "emoji": "🎣",
-    "categories": ["security", "app"],
+    "categories": [
+      "security",
+      "app"
+    ],
     "image": "images/phishing-link-analyzer.jpg",
     "description": "Paste a suspicious link and see its red flags explained, with a risk score and the real destination exposed.",
-    "highlights": ["Catches look-alike domains, punycode and the @ trick", "Runs 100% in the browser, never opens the link"],
-    "tags": ["JavaScript", "Security", "Testing"],
+    "highlights": [
+      "Catches look-alike domains, punycode and the @ trick",
+      "Runs 100% in the browser, never opens the link"
+    ],
+    "tags": [
+      "JavaScript",
+      "Security",
+      "Testing"
+    ],
     "builtWith": "JavaScript · URL parsing",
     "tests": 10,
     "repo": "https://github.com/TveitTheGhost/phishing-link-analyzer",
     "live": null,
-    "private": true
+    "private": true,
+    "updated": "2026-10-30",
+    "added": "2026-10-30"
   },
   {
     "name": "Breach Checker",
     "emoji": "🔐",
-    "categories": ["security", "app"],
+    "categories": [
+      "security",
+      "app"
+    ],
     "image": "images/password-breach-checker.jpg",
     "description": "Rates password strength and checks Have I Been Pwned without ever sending the password anywhere.",
-    "highlights": ["k-anonymity: only 5 characters of a hash leave the browser", "Crack-time estimates with zxcvbn"],
-    "tags": ["JavaScript", "Security", "Web Crypto"],
+    "highlights": [
+      "k-anonymity: only 5 characters of a hash leave the browser",
+      "Crack-time estimates with zxcvbn"
+    ],
+    "tags": [
+      "JavaScript",
+      "Security",
+      "Web Crypto"
+    ],
     "builtWith": "JavaScript · HIBP API · zxcvbn",
     "repo": "https://github.com/TveitTheGhost/password-breach-checker",
     "live": null,
-    "private": true
+    "private": true,
+    "updated": "2026-10-30",
+    "added": "2026-10-30"
   },
   {
     "name": "Cipher Playground",
     "emoji": "🔤",
-    "categories": ["security", "app"],
+    "categories": [
+      "security",
+      "app"
+    ],
     "image": "images/cipher-playground.jpg",
     "description": "Encrypt, decode, hash and crack: Caesar, Vigenère, XOR, Base64 and SHA-256, each explained step by step.",
-    "highlights": ["Brute-force and frequency-analysis cracking", "Code-breaking challenges"],
-    "tags": ["JavaScript", "Cryptography", "SVG"],
+    "highlights": [
+      "Brute-force and frequency-analysis cracking",
+      "Code-breaking challenges"
+    ],
+    "tags": [
+      "JavaScript",
+      "Cryptography",
+      "SVG"
+    ],
     "builtWith": "JavaScript · Web Crypto · SVG",
     "repo": "https://github.com/TveitTheGhost/cipher-playground",
     "live": null,
-    "private": true
+    "private": true,
+    "updated": "2026-10-30",
+    "added": "2026-10-30"
   },
   {
     "name": "fim",
     "emoji": "🛡️",
-    "categories": ["security", "cli"],
+    "categories": [
+      "security",
+      "cli"
+    ],
     "terminal": [
-      ["prompt", "$ fim check ./site"],
-      ["warn", "+ added      uploads/shell.php"],
-      ["warn", "~ modified   index.html"],
-      ["dim", "- removed    robots.txt"],
-      ["bad", "✗ 3 changes found · 125 unchanged"]
+      [
+        "prompt",
+        "$ fim check ./site"
+      ],
+      [
+        "warn",
+        "+ added      uploads/shell.php"
+      ],
+      [
+        "warn",
+        "~ modified   index.html"
+      ],
+      [
+        "dim",
+        "- removed    robots.txt"
+      ],
+      [
+        "bad",
+        "✗ 3 changes found · 125 unchanged"
+      ]
     ],
     "description": "A file integrity monitor that fingerprints every file with SHA-256 and reports exactly what changed.",
-    "highlights": ["Spots tampered files, dropped web shells and defacements", "Live watch mode, JSON output, 31 tests"],
-    "tags": ["Node.js", "CLI", "Security", "Testing"],
+    "highlights": [
+      "Spots tampered files, dropped web shells and defacements",
+      "Live watch mode, JSON output, 31 tests"
+    ],
+    "tags": [
+      "Node.js",
+      "CLI",
+      "Security",
+      "Testing"
+    ],
     "builtWith": "Node.js · zero deps",
     "tests": 31,
     "repo": "https://github.com/TveitTheGhost/file-integrity-monitor",
     "live": null,
-    "private": true
+    "private": true,
+    "updated": "2026-10-30",
+    "added": "2026-10-30"
   },
   {
     "name": "Weather",
     "emoji": "🌤️",
-    "categories": ["app"],
+    "categories": [
+      "app"
+    ],
     "image": "images/weather-app.jpg",
     "description": "Search any city for current conditions and a 5-day forecast, with a sky that changes with the weather.",
-    "highlights": ["Live data from the Open-Meteo REST API", "°C/°F toggle, geolocation, recent searches"],
-    "tags": ["JavaScript", "REST API", "CSS"],
+    "highlights": [
+      "Live data from the Open-Meteo REST API",
+      "°C/°F toggle, geolocation, recent searches"
+    ],
+    "tags": [
+      "JavaScript",
+      "REST API",
+      "CSS"
+    ],
     "builtWith": "JavaScript · REST API",
     "repo": "https://github.com/TveitTheGhost/weather-app",
     "live": null,
-    "private": true
+    "private": true,
+    "updated": "2026-10-30",
+    "added": "2026-10-30"
   },
   {
     "name": "passgen",
     "emoji": "🔑",
-    "categories": ["security", "cli"],
+    "categories": [
+      "security",
+      "cli"
+    ],
     "terminal": [
-      ["prompt", "$ passgen"],
-      ["pw", ":8T9K//PX8zL7R,t"],
-      ["ok", "Strength: very strong (104 bits)"],
-      ["prompt", "$ passgen -p"],
-      ["pw", "Peach-Easel-Mosaic-Lunar-Apple-32"],
-      ["ok", "Strength: strong (65 bits)"]
+      [
+        "prompt",
+        "$ passgen"
+      ],
+      [
+        "pw",
+        ":8T9K//PX8zL7R,t"
+      ],
+      [
+        "ok",
+        "Strength: very strong (104 bits)"
+      ],
+      [
+        "prompt",
+        "$ passgen -p"
+      ],
+      [
+        "pw",
+        "Peach-Easel-Mosaic-Lunar-Apple-32"
+      ],
+      [
+        "ok",
+        "Strength: strong (65 bits)"
+      ]
     ],
     "description": "A secure password and passphrase generator for the command line, with zero dependencies.",
-    "highlights": ["Cryptographically secure randomness", "Entropy-based strength meter, 19 tests"],
-    "tags": ["Node.js", "CLI", "Security", "Testing"],
+    "highlights": [
+      "Cryptographically secure randomness",
+      "Entropy-based strength meter, 19 tests"
+    ],
+    "tags": [
+      "Node.js",
+      "CLI",
+      "Security",
+      "Testing"
+    ],
     "builtWith": "Node.js · zero deps",
     "tests": 19,
     "repo": "https://github.com/TveitTheGhost/password-generator-cli",
     "live": null,
-    "private": true
+    "private": true,
+    "updated": "2026-10-30",
+    "added": "2026-10-30"
   },
   {
     "name": "Pomodoro Timer",
     "emoji": "🍅",
-    "categories": ["app"],
+    "categories": [
+      "app"
+    ],
     "image": "images/pomodoro-timer.jpg",
     "description": "A focus timer with an animated progress ring, automatic break cycle and a generated chime.",
-    "highlights": ["Drift-free timing in background tabs", "Web Audio chime, keyboard shortcuts"],
-    "tags": ["JavaScript", "SVG", "Web Audio"],
+    "highlights": [
+      "Drift-free timing in background tabs",
+      "Web Audio chime, keyboard shortcuts"
+    ],
+    "tags": [
+      "JavaScript",
+      "SVG",
+      "Web Audio"
+    ],
     "builtWith": "JavaScript · SVG · Web Audio",
     "repo": "https://github.com/TveitTheGhost/pomodoro-timer",
     "live": null,
-    "private": true
+    "private": true,
+    "updated": "2026-10-30",
+    "added": "2026-10-30"
   },
   {
     "name": "To-Do",
     "emoji": "✅",
-    "categories": ["app"],
+    "categories": [
+      "app"
+    ],
     "image": "images/todo-app.jpg",
     "description": "A clean task manager with priorities, filters, inline editing and dark mode.",
-    "highlights": ["Smart sorting by status and priority", "Saved locally, safe from HTML injection"],
-    "tags": ["JavaScript", "localStorage", "CSS"],
+    "highlights": [
+      "Smart sorting by status and priority",
+      "Saved locally, safe from HTML injection"
+    ],
+    "tags": [
+      "JavaScript",
+      "localStorage",
+      "CSS"
+    ],
     "builtWith": "JavaScript · localStorage",
     "repo": "https://github.com/TveitTheGhost/todo-app",
     "live": null,
-    "private": true
+    "private": true,
+    "updated": "2026-10-30",
+    "added": "2026-10-30"
   },
   {
     "name": "Tic-Tac-Toe",
     "emoji": "❌",
-    "categories": ["game"],
+    "categories": [
+      "game"
+    ],
     "image": "images/tic-tac-toe.jpg",
     "description": "The classic game with a two-player mode and an AI opponent that cannot be beaten.",
-    "highlights": ["Minimax algorithm for a perfect AI", "Per-mode scores, animations"],
-    "tags": ["JavaScript", "Algorithms", "Game"],
+    "highlights": [
+      "Minimax algorithm for a perfect AI",
+      "Per-mode scores, animations"
+    ],
+    "tags": [
+      "JavaScript",
+      "Algorithms",
+      "Game"
+    ],
     "builtWith": "JavaScript · Algorithms",
     "repo": "https://github.com/TveitTheGhost/tic-tac-toe",
     "live": null,
-    "private": true
+    "private": true,
+    "updated": "2026-10-30",
+    "added": "2026-10-30"
   }
 ]
