@@ -14,6 +14,19 @@ function el(tag, className, text) {
   return node;
 }
 
+const NEW_FOR_DAYS = 14;
+
+// "2026-11-19" -> "Nov 19, 2026", read as a calendar date so time zones can't shift it.
+function formatDate(iso) {
+  return new Date(`${iso}T12:00:00`).toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' });
+}
+
+function isNew(project) {
+  if (!project.added) return false;
+  const days = (Date.now() - new Date(`${project.added}T00:00:00`).getTime()) / 86400000;
+  return days >= 0 && days <= NEW_FOR_DAYS;
+}
+
 // A fake terminal window for CLI projects. `lines` is a list of [style, text] pairs.
 function terminalPreview(lines) {
   const term = el('div', 'terminal mono');
@@ -42,6 +55,7 @@ function renderProject(project, index) {
   const body = el('div', 'project-body');
   const title = el('h3');
   title.append(el('span', '', project.emoji), project.name);
+  if (isNew(project)) title.appendChild(el('span', 'new-badge', 'New'));
 
   const highlights = el('ul', 'highlights');
   project.highlights.forEach((h) => highlights.appendChild(el('li', '', h)));
@@ -69,6 +83,12 @@ function renderProject(project, index) {
     links.appendChild(live);
   }
 
+  if (project.updated) {
+    const updated = el('span', 'updated', `Updated ${formatDate(project.updated)}`);
+    updated.title = project.added ? `Added ${formatDate(project.added)}` : '';
+    links.appendChild(updated);
+  }
+
   body.append(title, el('p', '', project.description), highlights, tags, links);
   card.append(thumb, body);
   return card;
@@ -92,6 +112,8 @@ async function loadProjects() {
   }
   document.getElementById('stat-projects').textContent = projects.length;
   document.getElementById('stat-tests').textContent = projects.reduce((sum, p) => sum + (p.tests ?? 0), 0);
+  const latest = projects.map((p) => p.updated).filter(Boolean).sort().at(-1);
+  if (latest) document.getElementById('last-updated').textContent = `Most recently updated first · last update ${formatDate(latest)}`;
   render();
 }
 
